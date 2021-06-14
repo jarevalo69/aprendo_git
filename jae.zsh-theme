@@ -5,7 +5,8 @@ PROMPT='$(_user_host)${_current_dir}$(git_prompt_info)$fg[yellow]>$reset_color '
 PROMPT2='%{$fg[grey]%}◀%{$reset_color%} '
 
 #RPROMPT='$(_vi_status)%{$(echotc UP 1)%}$(git_prompt_short_sha) $(_git_time_since_commit) ${_return_status} %T% %{$(echotc DO 1)%}'
-RPROMPT='$(_vi_status)%{$(echotc UP 1)%}$(git_prompt_short_sha) ${_return_status} %T% %{$(echotc DO 1)%}'
+#RPROMPT='$(_vi_status)%{$(echotc UP 1)%}$(git_prompt_short_sha) ${_return_status} %T% %{$(echotc DO 1)%}'
+RPROMPT='$(_vi_status)%{$(echotc UP 1)%}${_return_status}%{$(echotc DO 1)%}'
 
 local _current_dir="%{$fg[magenta]%}%0~%{$reset_color%} "
 local _return_status="%{$fg[red]%}%(?..⍉)%{$reset_color%}"
