@@ -3,8 +3,15 @@
 	<title>Pag 3</title>
 </head>
 <body>
-
-	<a href="http://facebook.com/AQUI_TU_USUARIO" target="_blank"><img src="https://lh5.googleusercontent.com/-x-K74Nqb3_8/T3ld3Uti0KI/AAAAAAAAAq0/hr-30_WBTzc/s32/twitter32.png" width=32 height=32 alt="Síguenos en facebook" /></a>
-
+	<label for="upload">Upload progress:</label>
+	<meter id="upload" name="upload"
+	min="0" max="100"
+	low="33" high="66" optimum="80"
+	value="50">
+	at 50/100
+</meter>
+<hr/>
+<label for="file">File progress:</label>
+<progress id="file" max="100" value="70"> 70% </progress>
 </body>
 </html>
